@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-class CustomContainer extends StatelessWidget {
-  const CustomContainer({super.key});
+class GradientContainer extends StatelessWidget {
+  final Widget child;
+
+  const GradientContainer({Key? key, required this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,14 +18,8 @@ class CustomContainer extends StatelessWidget {
           ],
         ),
       ),
-      child: const Center(
-        child: Text(
-          'Hello World2!',
-          style: TextStyle(
-            fontSize: 34,
-            color: Colors.yellow,
-          ),
-        ),
+      child: Center(
+        child: child,
       ),
     );
   }
