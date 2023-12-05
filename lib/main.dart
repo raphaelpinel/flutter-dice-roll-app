@@ -4,10 +4,16 @@ import 'package:first_app/styled_text.dart';
 
 void main() {
   runApp(const MaterialApp(
-    home: const Scaffold(
+    home: Scaffold(
       body: GradientContainer(
+        colors: [
+          Colors.red,
+          Colors.purple,
+        ],
+        startAlignment: Alignment.topRight,
+        endAlignment: Alignment.bottomLeft,
         child: StyledText(
-          text: 'Hello World4',
+          'Hello World!',
         ),
       ),
     ),
