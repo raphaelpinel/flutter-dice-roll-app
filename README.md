@@ -1,3 +1,3 @@
-# Flutter playground 1
+# Flutter dice roll app
 
-Experimenting creating a mobile app with Flutter
+Experimenting creating a dice roll mobile app with Flutter
